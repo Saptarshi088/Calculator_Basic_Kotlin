@@ -21,23 +21,23 @@ class MainActivity : AppCompatActivity() {
         val InputFromUserTwo = findViewById<TextInputEditText>(R.id.inputFromUser2)
         val ResultView = findViewById<TextView>(R.id.resView)
         AddButton.setOnClickListener {
-            val a = InputFromUserOne.text.toString().toInt()
-            val b = InputFromUserTwo.text.toString().toInt()
+            val a = InputFromUserOne.text.toString().toDouble()
+            val b = InputFromUserTwo.text.toString().toDouble()
             ResultView.text=(a+b).toString()
         }
         SubsButton.setOnClickListener {
-            val a = InputFromUserOne.text.toString().toInt()
-            val b = InputFromUserTwo.text.toString().toInt()
+            val a = InputFromUserOne.text.toString().toDouble()
+            val b = InputFromUserTwo.text.toString().toDouble()
             ResultView.text=(a-b).toString()
         }
         MulButton.setOnClickListener {
-            val a = InputFromUserOne.text.toString().toInt()
-            val b = InputFromUserTwo.text.toString().toInt()
+            val a = InputFromUserOne.text.toString().toDouble()
+            val b = InputFromUserTwo.text.toString().toDouble()
             ResultView.text=(a*b).toString()
         }
         DivButton.setOnClickListener {
-            val a = InputFromUserOne.text.toString().toInt()
-            val b = InputFromUserTwo.text.toString().toInt()
+            val a = InputFromUserOne.text.toString().toDouble()
+            val b = InputFromUserTwo.text.toString().toDouble()
             ResultView.text=(a/b).toString()
         }
     }
